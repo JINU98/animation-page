@@ -1,0 +1,15 @@
+.container{width:80%;}
+body{padding-top: 3%;font-family: 'Josefin Sans';display: block;}
+#toward{position: relative;z-index: 5;color:white;mix-blend-mode: difference;}
+#company{font-size: 1.2rem;letter-spacing: .5rem;color:#000;font-weight: 700;}
+.iicon{display:block;width: 25px;height: 2px;background-color: black;margin: 6px 0;}
+#space{padding-left:85%;padding-bottom: 3%;}
+h2{font-size: 3rem;line-height: 4.2rem;font-weight: 800;}
+svg{width:48px;height:48px;fill: none;stroke: currentcolor;stroke-width: 1.5;stroke-linecap: round;stroke-linejoin: round;border:2px solid #000;border-radius: 100px;margin-left: 16px;}
+#text{font-size: 1.6rem;color: #000;text-decoration: none;align-items: center;font-weight: 600;}
+img{height: 80%;width: 100%;z-index: 2;filter:brightness(60%);}
+.row{padding-top:4%;}
+.imgText {font-size:2.5rem;line-height: 3.4rem;position: absolute;color:white;z-index:3;margin-top: 40%;}
+.BrandName{z-index:3;position: absolute;margin-top: 156px;font-size: 1.6rem;color: #fff;font-weight: 600;}
+.cover{height: 80%;width: 100%;display: block;background:black;z-index: 4;position: absolute;}
+.upper{height: 100%;transform: translateY(-100%);}
