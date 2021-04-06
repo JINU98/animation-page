@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><title>React app</title><script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js'></script><link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700&display=swap"><link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"><link rel="stylesheet" href="style.css">
+<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js'></script>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+class Imitate extends React.Component {
+	constructor(props){
+    super(props);
+    this.myElement = null;
+    this.myTween = null;
+  }
+  componentDidMount(){
+	this.myTween = TweenLite.from(this.myElement0, {duration:2,y:100,mixBlendMode:"difference"});
+
+	this.myTween = TweenLite.to(this.myElement4, {duration:1,scaleY:0,delay:2.2,transformOrigin:"bottom",filter:"brightness(1%)"});
+    this.myTween = TweenLite.to(this.myElement5, {duration:1,scaleY:0,delay:2.4,transformOrigin:"bottom",filter:"brightness(1%)"});
+    this.myTween = TweenLite.to(this.myElement6, {duration:1,scaleY:0,delay:2.6,transformOrigin:"bottom",filter:"brightness(1%)"});
+
+	this.myTween = TweenLite.to(this.myElement1, {duration:1.5,scaleX:0,delay:3,transformOrigin:"right",filter:"brightness(1%)"});
+    this.myTween = TweenLite.to(this.myElement2, {duration:1.5,scaleX:0,delay:3.2,transformOrigin:"right",filter:"brightness(1%)"});
+    this.myTween = TweenLite.to(this.myElement3, {duration:1.5,scaleX:0,delay:3.4,transformOrigin:"right",filter:"brightness(1%)"});
+  }
+  render() {
+    return (
+		<div>
+       <div className='container'>
+	   	   <div className='nav'>
+	   <span id='company'>AGENCY</span>
+	   <div id='space'>
+		<span className='iicon'></span>
+	   <span className='iicon'></span>
+	   </div>
+	</div>
+	<div id='toward' ref={div => this.myElement0 = div}>
+	<h2>Creating unique brands is</h2>
+	<h2>what we do.</h2>
+</div>
+	<span id ='text'> More About us </span> 
+	<span> 
+		<svg viewBox="0 0 27 24" className="feather feather-arrow-right">
+		<line x1="10" y1="12" x2="18" y2="12"></line><polyline points="14 8 19 12 14 16"></polyline>
+		</svg>
+	</span>
+	</div>
+	<div className="no-gutters row">
+	<div className='col-md-4 img-fluid'>
+		<div className="container">
+			<span className='BrandName'>Lumin</span>
+			<h2 className='imgText'> For your Best Look ever</h2>
+		</div>
+			<div ref={div => this.myElement1 = div} className="cover"></div>
+			<div ref={div => this.myElement4 = div} className="cover upper"></div>
+		<img src="img1.png"></img>
+	</div>
+
+	<div className='col-md-4 img-fluid'><div className="container"><span className='BrandName'>Yourspace</span><h2 className='imgText'> Open space floor plans for you next venture</h2></div><div ref={div => this.myElement2 = div} className="cover"></div><div ref={div => this.myElement5 = div} className="cover upper"></div><img src="img2.png" ></img></div>
+	<div className='col-md-4 img-fluid'><div className="container"><span className='BrandName'>Curology</span><h2 className='imgText'>A custom formula for your skin’s unique needs</h2></div><div ref={div => this.myElement3 = div} className="cover"></div><div ref={div => this.myElement6 = div} className="cover upper"></div><img src="img3.png" ></img></div>
+	</div>
+</div>
+ );
+  }
+}
+ReactDOM.render(
+    <Imitate />,
+    document.getElementById('root')
+  );
+</script>
+</body>
+</html>
